@@ -51,9 +51,12 @@ def init_game():
     turn = 'X'
     move = None
     # check that no one has won
-
+    print('Welcome to Py-Tac-Toe!')
     while winner == False:
-        move = input('Enter Column A-C and Row 1-3: ')
+        print("________________________________")
+        print(f"Player {turn}'s turn")
+        move = input('Enter Column a-c and Row 1-3 (ex. a2): ')
+        move = move.lower()
         # if a move is in the board mark the spot as X
         if move in board and board[move] == ' ':
             board[move] = turn
