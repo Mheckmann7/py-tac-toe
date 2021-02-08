@@ -51,10 +51,12 @@ def init_game():
     turn = 'X'
     move = None
 
-    print('Welcome to Py-Tac-Toe!')
+    print(' ||  WELCOME TO PY-TAC-TOE!  ||')
+    format()
     while winner == False:
         print("________________________________")
-        print(f"Player {turn}'s turn")
+        print(f"It is Player {turn}'s turn")
+
         move = input('Enter Column a-c and Row 1-3 (ex. a2): ')
         move = move.lower()
 
