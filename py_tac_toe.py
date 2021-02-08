@@ -36,6 +36,18 @@ def check_winner():
         winner = True
     elif board['a3'] == 'O' and board['b2'] == 'O' and board['c1'] == 'O':
         winner = True
+    elif board['a1'] == 'X' and board['a2'] == 'X' and board['a3'] == 'X':
+        winner = True
+    elif board['a1'] == 'O' and board['a2'] == 'O' and board['a3'] == 'O':
+        winner = True
+    elif board['b1'] == 'X' and board['b2'] == 'X' and board['b3'] == 'X':
+        winner = True
+    elif board['b1'] == 'O' and board['b2'] == 'O' and board['b3'] == 'O':
+        winner = True
+    elif board['c1'] == 'X' and board['c2'] == 'X' and board['c3'] == 'X':
+        winner = True
+    elif board['c1'] == 'O' and board['c2'] == 'O' and board['c3'] == 'O':
+        winner = True
     else:
         winner = False
 
